@@ -5,7 +5,7 @@
     <title>Ejercicio-05</title> 
 </head> 
 <body>
-<h1>Número aleatorio con su multiplicación</h1>
+<h1>Número aleatorio con su tabla de multiplicación</h1>
 <?php
 
 $numero= rand(1,10);
