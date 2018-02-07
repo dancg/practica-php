@@ -34,6 +34,8 @@
                 echo "<br>";
             }
             echo "</table>";
+        }else{
+            echo "el parámetro introducido no es un número o es incorrecto";
         }
     ?>
 
