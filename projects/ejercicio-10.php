@@ -10,9 +10,9 @@
     <?php
       $moneda = rand(0,1);
       if ($moneda == 0){
-          echo "<img src=\"images/cara.jpeg\" />";
+          echo "<img src=\"images/eurocara.jpeg\" />";
       }else{
-          echo "<img src=\"images/cruz.jpeg\" />";
+          echo "<img src=\"images/eurocruz.jpeg\" />";
       }
 
 
