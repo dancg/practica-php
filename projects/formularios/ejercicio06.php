@@ -9,7 +9,7 @@
 <body>
     <form method="post">
         <div>
-            <label for="numero_monedas">Numero de dados:</label>
+            <label for="numero_dados">Numero de dados:</label>
             <select name="numero_dados">
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -34,7 +34,7 @@
             </select>    
         </div>
         <div>
-        <button type="submit" value="Submit">Lanzar moneda(s)</button>
+        <button type="submit" value="Submit">Lanzar dado(s)</button>
     </form>
     <?php
         $numero_dados = $_POST["numero_dados"];
