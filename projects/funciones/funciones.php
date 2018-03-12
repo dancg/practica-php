@@ -26,7 +26,7 @@ function inicializar_array ($numero_elementos, $min, $max){
 
 }
 
-//Definición de las funciónes del ejercicio03 (para este caso necesito la función del ejercicio02)
+//Definición de las funciones del ejercicio03 (para este caso necesito la función del ejercicio02)
 //Aunque en este caso necesito comentarla para no crear colisiones de funciones
 /*function inicializar_array ($numero_elementos, $min, $max){
     $lista = array();
@@ -46,5 +46,53 @@ function calcular_media ($lista){
     return $media;    
 
 }
-
+//Definición de las función del ejercicio04
+function maximo($num_ele){
+    $maximo = $temperaturas[0] ;
+    for ($i=0; $i < $num_ele; $i++){
+        $temperaturas[$i] = rand (1,30);
+      echo "<br>" ;
+      echo "El numero aleatorio al que se le va a calcular el máximo es : ";
+      echo "$temperaturas[$i]";
+      echo "<br>" ;
+      echo "<br>" ;
+        
+        if ($temperaturas[$i] > $maximo) {
+            $maximo= $temperaturas[$i];
+        }
+    } echo "<h2>La temperatura máxima es : $maximo</h2>";
+  }
+//Definición de la función del ejercicio05
+  function minimo($nume_elementos){
+    for ($i=0; $i < $nume_elementos; $i++){
+        $temperaturas[$i] = rand (1,30);
+        echo "<br>" ;
+        echo "El numero aleatorio al que se le va a calcular el mínimo es : ";
+        echo "$temperaturas[$i]";
+        echo "<br>" ;
+        echo "<br>" ;
+    }
+      $minimo = $temperaturas[0] ;
+      foreach ($temperaturas as $valor ) {
+          if ($valor < $minimo) {
+              $minimo= $valor;
+          }
+      }
+  echo "<h2>La temperatura mínima es : $minimo</h2>";
+  }
+//Definición de la función del ejercicio06
+  function imprimir_array($nro_elementos){
+    echo "<table border=\"1\">";
+      $valores = array();
+      for ($i=0; $i < $nro_elementos; $i++){
+          $valores[$i] = rand(1, 20);
+          echo "<tr>";
+              echo "<td> Posición del array : </td>";
+              echo "<td> $i </td>";
+              echo "<td> valor = </td>";
+              echo "<td>$valores[$i]</td>";
+          echo "</tr>";
+      } 
+    echo "</table>";
+    }
 ?>
